@@ -1,6 +1,7 @@
 # 🏦 EasyEstoque  
 ![Java](https://img.shields.io/badge/Java-25-orange)
 ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.x-brightgreen)
+![PostgreSQL](https://img.shields.io/badge/logo-postgresql-blue?logo=postgresql)
 ![Status](https://img.shields.io/badge/status-em%20desenvolvimento-yellow)
 
 Projeto desenvolvido como forma de estudo para aprofundar conhecimentos em desenvolvimento backend utilizando **Spring Boot 3/4** e **Java 25**, com foco na construção de uma aplicação de controle de estoque.
