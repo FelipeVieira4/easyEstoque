@@ -31,6 +31,5 @@ public class ArmazemModel {
     )
     private NaturezaModel natureza;
 
-    @NotBlank(message = "Endereço obrigatório!")
     private String endereco;
 }
