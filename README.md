@@ -44,3 +44,14 @@ Essa separação garante melhor organização, testabilidade e manutenção do s
 - **Framework:** Spring Boot 3/4  
 - **Arquitetura:** API REST  
 - **Persistência:** Spring Data JPA  
+
+---
+
+## .env
+Será necessário 3 atributos no arquivo .env para configurar banco de dados
+
+ - **DB_NAME:** Nome do banco
+ - **DB_USER:** Usuário
+ - **DB_PASS:** Senha do usuário
+
+---
