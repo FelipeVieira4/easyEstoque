@@ -14,6 +14,16 @@ import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 
+/**
+ * Model que representa a entidade Produto no sistema.
+ * <p>
+ * Mapeada para a tabela {@code produtos} no banco de dados.
+ * Utilizada para o cadastro de Produto.
+ * </p>
+ *
+ * @author Felipe Vieira
+ */
+
 @Entity
 @Table(name = "produtos")
 public class ProdutoModel implements Serializable{

@@ -8,21 +8,22 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.sysAppEstudo.easyEstoque.models.ProdutoModel;
-import com.sysAppEstudo.easyEstoque.repository.ProdutoRepository;
+import com.sysAppEstudo.easyEstoque.dto.ProdutoRequestDTO;
+import com.sysAppEstudo.easyEstoque.dto.ProdutoResponseDTO;
+import com.sysAppEstudo.easyEstoque.service.ProdutoService;
 
 import jakarta.validation.Valid;
 
 @RestController
 @RequestMapping("api/produto")
 public class ProdutoController {
+
     @Autowired
-    private ProdutoRepository produtoRepository;
+    private ProdutoService produtoService;
 
     @PostMapping
-    public ResponseEntity<ProdutoModel> criarProduto(@RequestBody @Valid ProdutoModel bodyProduto){
-        ProdutoModel produtoCadastrado=produtoRepository.save(bodyProduto);
-
-        return new ResponseEntity<>(produtoCadastrado,HttpStatus.OK);
+    public ResponseEntity<ProdutoResponseDTO> criarProduto(@RequestBody @Valid ProdutoRequestDTO produtoDTO){
+        var produtoSalvo = produtoService.salvar(produtoDTO); 
+        return ResponseEntity.status(HttpStatus.CREATED).body(produtoSalvo);
     }
 }
