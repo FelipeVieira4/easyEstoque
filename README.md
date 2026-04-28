@@ -1,4 +1,4 @@
-# 🏦 EasyEstoque  
+# 📦 EasyEstoque  
 ![Java](https://img.shields.io/badge/Java-25-orange)
 ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.x-brightgreen)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-darkgray?logo=postgresql)
@@ -33,6 +33,7 @@ O projeto segue uma arquitetura em camadas bem definida:
 - **Controller:** Responsável por expor os endpoints da API.  
 - **Service:** Contém as regras de negócio da aplicação.  
 - **Repository:** Interface de acesso aos dados.  
+- **DTO:** Para padroniza envio e retorno dos entrypoints da API.
 
 Essa separação garante melhor organização, testabilidade e manutenção do sistema.
 
